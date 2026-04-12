@@ -135,7 +135,7 @@
                             let rowData = [stateInfo.name, city, `${stateCode}${code}`, `"${mkName}"`];
                             cleanMonths.forEach(mName => {
                                 let mInfo = headerMap[mName];
-                                let mLabel = row.querySelector(`label[id*="j_idt${parseInt(mInfo.group)+6}:${mInfo.idx}:j_idt"]`);
+                                let mLabel = row.querySelector(`label[id*="j_idt${parseInt(mInfo.group)+10}:${mInfo.idx}:j_idt"]`);
                                 rowData.push(mLabel ? mLabel.innerText.trim() : "0");
                             });
                             csvRows.push(rowData.join(","));
